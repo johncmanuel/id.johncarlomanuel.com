@@ -1,14 +1,19 @@
 {
   "name": "id.johncarlomanuel.com",
-  "module": "index.ts",
-  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
+  },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "schema-dts": "^1.1.2"
+    "hono": "^4.6.8",
+    "schema-dts": "^1.1.2",
+    "wrangler": "^3.84.1"
   }
 }

@@ -1,15 +1,14 @@
 # id.johncarlomanuel.com
 
-To install dependencies:
+To install dependencies and run development server, run the following commands:
 
 ```bash
 bun install
+bun run dev
 ```
 
-To run:
+Deploy:
 
 ```bash
-bun run index.ts
+bun run deploy
 ```
-
-This project was created using `bun init` in bun v1.1.31. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
