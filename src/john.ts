@@ -3,9 +3,13 @@ import type { Person } from "schema-dts";
 const john: Person = {
 	"@type": "Person",
 	"@id": "https://id.johncarlomanuel.com/",
-	name: ["John Carlo Manuel", "johncmanuel"],
+	name: ["John Carlo Manuel", "johncmanuel", "John"],
 	identifier: "johncmanuel",
-	url: "https://www.johncarlomanuel.com",
+	url: [
+		"https://johncarlomanuel.com/",
+		"https://fart.johncarlomanuel.com/",
+		"https://registers.johncarlomanuel.com/",
+	],
 	sameAs: [
 		"https://github.com/johncmanuel",
 		"https://x.com/johncmanuel",
@@ -13,11 +17,20 @@ const john: Person = {
 	],
 	email: "mail@johncarlomanuel.com",
 	gender: "male",
-	description: "A computer science major and software engineer :)",
+	description: "A computer science major at CSUF and software engineer :)",
 	affiliation: [
-		"California State University, Fullerton",
-		"Association for Computing Machinery, CSUF",
-		"FartLabs",
+		{
+			"@type": "Organization",
+			"@id": "https://www.fullerton.edu/",
+		},
+		{
+			"@type": "Organization",
+			"@id": "https://acmcsuf.com/",
+		},
+		{
+			"@type": "Organization",
+			"@id": "http://id.fartlabs.org/",
+		},
 	],
 	knowsLanguage: ["en"],
 };
