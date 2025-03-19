@@ -16,7 +16,7 @@ const john: Person = {
 		"https://x.com/johncmanuel",
 		"https://www.linkedin.com/in/johncarlomanuel",
 	],
-	email: "mail@johncarlomanuel.com",
+	email: "johncnmanuel@gmail.com",
 	gender: "male",
 	description: "A computer science major at CSUF and software engineer :)",
 	affiliation: [
