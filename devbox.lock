@@ -48,6 +48,9 @@
           "store_path": "/nix/store/hilx2jwdslc05d38q4fzpsli6pgc56sa-bun-1.1.31"
         }
       }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "resolved": "github:NixOS/nixpkgs/1750f3c1c89488e2ffdd47cab9d05454dddfb734?lastModified=1742800061&narHash=sha256-oDJGK1UMArK52vcW9S5S2apeec4rbfNELgc50LqiPNs%3D"
     }
   }
 }

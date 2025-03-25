@@ -9,7 +9,7 @@ const john: Person = {
 		"https://johncarlomanuel.com/",
 		"https://fart.johncarlomanuel.com/",
 		"https://registers.johncarlomanuel.com/",
-		"https://stories.johncarlomanuel.com/",
+		"https://react.johncarlomanuel.com/",
 	],
 	sameAs: [
 		"https://github.com/johncmanuel",
