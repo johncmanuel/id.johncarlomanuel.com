@@ -15,6 +15,7 @@ const john: Person = {
 		"https://github.com/johncmanuel",
 		"https://x.com/johncmanuel",
 		"https://www.linkedin.com/in/johncarlomanuel",
+		"https://devpost.com/johncmanuel",
 	],
 	email: "johncnmanuel@gmail.com",
 	gender: "male",
