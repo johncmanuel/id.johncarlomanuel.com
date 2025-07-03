@@ -1,5 +1,10 @@
 import { graph } from "./john";
 
+// sites that're allowed to fetch the data
+const allowedOrigins = [
+	"https://johncarlomanuel.com/"
+]
+
 export default {
 	async fetch(req: Request) {
 		const url = new URL(req.url);
@@ -22,6 +27,7 @@ export default {
 			headers: {
 				"Content-Type": "application/json",
 				"Cache-Control": "no-cache",
+				"Access-Control-Allow-Origin": allowedOrigins.join(", "),
 			},
 		});
 	},
