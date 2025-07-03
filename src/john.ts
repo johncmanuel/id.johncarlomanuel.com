@@ -80,7 +80,7 @@ const Projects: ProjectCollection = [
 		name: "isabot",
 		url: "https://github.com/johncmanuel/isabot",
 		desc: "A Discord interactions and webhook bot for AR Club, a World of Warcraft guild in US-Shandris/Bronzebeard.",
-		tags: ["deno", "typescript"],
+		tags: ["deno", "typescript", "discord"],
 		challenges: [
 			"Learning Discord webhooks and slash commands ",
 			"Working with external APIs",
