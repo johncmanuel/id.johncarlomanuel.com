@@ -1,5 +1,16 @@
 import type { Person } from "schema-dts";
 
+type SocialsCollection = Record<string, string>;
+
+const Socials: SocialsCollection = {
+	linkedin: "https://www.linkedin.com/in/johncarlomanuel",
+	github: "https://github.com/johncmanuel",
+	blog: "https://registers.johncarlomanuel.com/",
+	x: "https://x.com/johncmanuel",
+	twitter: "https://x.com/johncmanuel",
+	devpost: "https://devpost.com/johncmanuel",
+};
+
 interface Book {
 	title: string;
 	link: string;
@@ -60,7 +71,8 @@ interface ProjectItem {
 	name: string;
 	url: string;
 	desc: string;
-	tags?: string[];
+	// tags were already lowercase prior to making this change, so keep it consistent
+	tags?: Lowercase<string>[];
 	challenges?: string[];
 	outcomes?: string[];
 	img_url?: string;
@@ -186,12 +198,12 @@ const Projects: ProjectCollection = [
 	},
 ];
 
-// Extended version of Person but with extra properties
 type ExtendedPerson = Person & {
-	projects: ProjectCollection;
-	skills: SkillsCollection;
-	webring: WebringCollection;
-	books: BookCollection;
+	projects?: ProjectCollection;
+	skills?: SkillsCollection;
+	webring?: WebringCollection;
+	books?: BookCollection;
+	socials?: SocialsCollection;
 };
 
 const john: ExtendedPerson = {
@@ -206,10 +218,11 @@ const john: ExtendedPerson = {
 		"https://react.johncarlomanuel.com/",
 	],
 	sameAs: [
-		"https://github.com/johncmanuel",
-		"https://x.com/johncmanuel",
-		"https://www.linkedin.com/in/johncarlomanuel",
-		"https://devpost.com/johncmanuel",
+		Socials["blog"],
+		Socials["x"],
+		Socials["github"],
+		Socials["linkedin"],
+		Socials["devpost"],
 	],
 	email: "johncnmanuel@gmail.com",
 	gender: "male",
@@ -233,6 +246,7 @@ const john: ExtendedPerson = {
 	skills: Skills,
 	webring: Webring,
 	books: Books,
+	socials: Socials,
 };
 
 export const graph = {
