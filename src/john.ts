@@ -1,5 +1,21 @@
 import type { Person } from "schema-dts";
 
+interface Book {
+	title: string;
+	link: string;
+	description: string;
+}
+
+type BookCollection = Book[];
+
+const Books: BookCollection = [
+	{
+		title: "20 Years",
+		description: "A fantasy, adventure novel written and published in 2020.",
+		link: "https://www.amazon.com/dp/B08JRJ1YV6",
+	},
+];
+
 interface WebringItem {
 	name: string;
 	link: string;
@@ -170,14 +186,15 @@ const Projects: ProjectCollection = [
 	},
 ];
 
-// Extended version of Person but with software developer properties
-type DeveloperProfile = Person & {
+// Extended version of Person but with extra properties
+type ExtendedPerson = Person & {
 	projects: ProjectCollection;
 	skills: SkillsCollection;
 	webring: WebringCollection;
+	books: BookCollection;
 };
 
-const john: DeveloperProfile = {
+const john: ExtendedPerson = {
 	"@type": "Person",
 	"@id": "https://id.johncarlomanuel.com/",
 	name: ["John Carlo Manuel", "johncmanuel", "John"],
@@ -215,6 +232,7 @@ const john: DeveloperProfile = {
 	projects: Projects,
 	skills: Skills,
 	webring: Webring,
+	books: Books,
 };
 
 export const graph = {
