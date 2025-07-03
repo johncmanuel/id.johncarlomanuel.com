@@ -214,7 +214,8 @@ const john: ExtendedPerson = {
 	url: [
 		"https://johncarlomanuel.com/",
 		"https://fart.johncarlomanuel.com/",
-		"https://registers.johncarlomanuel.com/",
+		// "https://registers.johncarlomanuel.com/",
+		Socials["blog"],
 		"https://react.johncarlomanuel.com/",
 	],
 	sameAs: [
