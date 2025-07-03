@@ -73,7 +73,7 @@ const Projects: ProjectCollection = [
 		name: "Code Red",
 		url: "https://github.com/johncmanuel/codered",
 		desc: "A web-based, multiplayer icebreaker activity that emphasizes verbal communication and teamwork",
-		tags: ["TypeScript", "Svelte", "Colyseus.js", "Phaser.js"],
+		tags: ["typescript", "svelte", "colyseus.js", "phaser.js"],
 	},
 	// {
 	// 	name: "bettercs",
