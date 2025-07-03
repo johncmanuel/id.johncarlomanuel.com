@@ -28,6 +28,8 @@ const Books: BookCollection = [
 ];
 
 interface WebringItem {
+	webring_name: string;
+	// the name as it appears on the webring link
 	name: string;
 	link: string;
 }
@@ -36,7 +38,8 @@ type WebringCollection = WebringItem[];
 
 const Webring: WebringCollection = [
 	{
-		name: "Skyline College Computer Science Club",
+		webring_name: "Skyline College Computer Science Club",
+		name: "john",
 		link: "https://raw.githubusercontent.com/Skyline-College-Computer-Science-Club/clubwebring/master/webring.json",
 	},
 ];
