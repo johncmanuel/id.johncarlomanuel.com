@@ -86,7 +86,7 @@ type ProjectCollection = ProjectItem[];
 const Projects: ProjectCollection = [
 	{
 		name: "Code Red",
-		url: "https://github.com/johncmanuel/codered",
+		url: "https://codered-snowy.vercel.app/",
 		desc: "A web-based, multiplayer icebreaker activity that emphasizes verbal communication and teamwork",
 		tags: ["typescript", "svelte", "colyseus.js", "phaser.js"],
 	},
@@ -107,6 +107,12 @@ const Projects: ProjectCollection = [
 	// 	],
 	// 	img_url: "/assets/projects/bettercs.webp",
 	// },
+	{
+		name: "wheelie",
+		url: "https://wheelie.deno.dev/",
+		desc: "Full-stack web application that allows users to create their own fortune wheels and spin them.",
+		tags: ["deno", "typescript", "preact", "fresh"],
+	},
 	{
 		name: "isabot",
 		url: "https://github.com/johncmanuel/isabot",
