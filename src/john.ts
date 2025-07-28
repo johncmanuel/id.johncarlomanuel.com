@@ -132,7 +132,7 @@ const Projects: ProjectCollection = [
 	},
 	{
 		name: "RateMyLoo",
-		url: "https://github.com/johncmanuel/RateMyLoo",
+		url: "https://rate-my-loo.vercel.app/",
 		desc: "A web application for users who want to share pictures of their bathrooms and rate others. CPSC 362 Project",
 		img_url: "/assets/projects/ratemyloo.webp",
 		tags: [
