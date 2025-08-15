@@ -68,6 +68,7 @@ const Skills: SkillsCollection = [
 	"SvelteKit",
 	"Git",
 	"Docker",
+	"Linux"
 ];
 
 interface ProjectItem {
@@ -107,6 +108,12 @@ const Projects: ProjectCollection = [
 	// 	],
 	// 	img_url: "/assets/projects/bettercs.webp",
 	// },
+	{
+		name: "FullyHacks 2025",
+		url: "https://fullyhacks.acmcsuf.com/",
+		desc: "Website for FullyHacks 2025, the largest hackathon at CSUF.",
+		tags: ["next.js", "typescript", "react", "tailwindcss", "prisma", "mongodb"],
+	},
 	{
 		name: "wheelie",
 		url: "https://wheelie.deno.dev/",
