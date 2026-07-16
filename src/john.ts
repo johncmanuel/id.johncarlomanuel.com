@@ -135,7 +135,7 @@ const Projects: ProjectCollection = [
 	},
 	{
 		name: "wheelie",
-		url: "https://wheelie.deno.dev/",
+		url: "https://wheelie.johncmanuel.deno.net/",
 		desc: "Full-stack web application that allows users to create their own fortune wheels and spin them.",
 		tags: ["deno", "typescript", "preact", "fresh"],
 	},
