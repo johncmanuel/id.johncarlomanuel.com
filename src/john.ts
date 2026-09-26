@@ -31,7 +31,7 @@ interface WebringItem {
 	webring_name: string;
 	// the name as it appears on the webring link
 	name: string;
-  // ideally want the link to the raw file if on github (use raw.githubusercontent.com/)
+	// ideally want the link to the raw file if on github (use raw.githubusercontent.com/)
 	link: string;
 }
 
@@ -43,11 +43,11 @@ const Webring: WebringCollection = [
 		name: "john",
 		link: "https://raw.githubusercontent.com/Skyline-College-Computer-Science-Club/clubwebring/master/webring.json",
 	},
-  {
-    webring_name: "FartLabs",
-    name: "john",
-    link: "https://raw.githubusercontent.com/FartLabs/webring/refs/heads/main/webring.json"
-  }
+	{
+		webring_name: "FartLabs",
+		name: "john",
+		link: "https://raw.githubusercontent.com/FartLabs/webring/refs/heads/main/webring.json",
+	},
 ];
 
 // originally from https://github.com/johncmanuel/johncarlomanuel.com/blob/master/src/lib/public/self/self.json
@@ -60,7 +60,7 @@ const Skills: SkillsCollection = [
 	"C++",
 	"C#",
 	"Deno",
-  "Go",
+	"Go",
 	// "ASP.NET",
 	"TypeScript",
 	"JavaScript",
@@ -75,7 +75,7 @@ const Skills: SkillsCollection = [
 	"SvelteKit",
 	"Git",
 	"Docker",
-	"Linux"
+	"Linux",
 ];
 
 interface ProjectItem {
@@ -92,18 +92,24 @@ interface ProjectItem {
 type ProjectCollection = ProjectItem[];
 
 const Projects: ProjectCollection = [
-  {
-    name: "pneuma",
-    url: "https://github.com/johncmanuel/pneuma",
-    desc: "An open-source, self-hostable, and local-first music project, designed to give a Spotify-like experience.",
-    tags: ["go", "svelte", "typescript", "SQL"] 
-  },
-  {
-    name: "Fly on the Wall",
-    url: "https://fly.fartlabs.org/",
-    desc: "Local-first AI tool for recording, transcribing, and summarizing meetings.",
-    tags: ["typescript", "llama", "go", "electron"]
-  },
+	{
+		name: "bordle",
+		url: "https://github.com/johncmanuel/bordle",
+		desc: "A Wordle variant that allows users to insert their own words, playable as a Discord activity.",
+		tags: ["c#", "typescript", "docker", "postgresql"],
+	},
+	{
+		name: "pneuma",
+		url: "https://github.com/johncmanuel/pneuma",
+		desc: "An open-source, self-hostable, and local-first music project, designed to give a Spotify-like experience.",
+		tags: ["go", "svelte", "typescript", "sql"],
+	},
+	{
+		name: "Fly on the Wall",
+		url: "https://fly.fartlabs.org/",
+		desc: "Local-first AI tool for recording, transcribing, and summarizing meetings.",
+		tags: ["typescript", "llama", "go", "electron"],
+	},
 	{
 		name: "Code Red",
 		url: "https://codered-snowy.vercel.app/",
@@ -131,7 +137,14 @@ const Projects: ProjectCollection = [
 		name: "FullyHacks 2025",
 		url: "https://fullyhacks.acmcsuf.com/",
 		desc: "Website for FullyHacks 2025, the largest hackathon at CSUF.",
-		tags: ["next.js", "typescript", "react", "tailwindcss", "prisma", "mongodb"],
+		tags: [
+			"next.js",
+			"typescript",
+			"react",
+			"tailwindcss",
+			"prisma",
+			"mongodb",
+		],
 	},
 	{
 		name: "wheelie",
@@ -250,15 +263,15 @@ const john: ExtendedPerson = {
 		"https://johncarlomanuel.com/",
 		"https://fart.johncarlomanuel.com/",
 		// "https://registers.johncarlomanuel.com/",
-		Socials["blog"],
+		Socials.blog,
 		"https://react.johncarlomanuel.com/",
 	],
 	sameAs: [
-		Socials["blog"],
-		Socials["x"],
-		Socials["github"],
-		Socials["linkedin"],
-		Socials["devpost"],
+		Socials.blog,
+		Socials.x,
+		Socials.github,
+		Socials.linkedin,
+		Socials.devpost,
 	],
 	email: "johncnmanuel@gmail.com",
 	gender: "male",
